@@ -20,6 +20,5 @@ let aaa = new AAA();
 bbb.test = aaa.test;
 bbb.test();
 
-debugger;
 let numer = 'VBNDVNEMDVDMVDMVDVDV';
 console.log(typeof numer);
