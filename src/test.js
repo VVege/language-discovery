@@ -1,15 +1,17 @@
+function spy(func) {
+    // your code
+    let array = [];
+    return function(...arguments) {
+      let str = 'call:';
+      arguments.reduce((item) => {
+        str += item + ' ';
+      }, str);
+      array.push(str);
+      func.calls = array;
+      func(...arguments);
+    }
+  }
 
-
-class A {
-    a = 0;
-}
-
-class B extends A {
-    b = 2;
-}
-
-let a  = new A();
-let b = new B();
-
-debugger;
-console.log('finish');
+  function test(1,2) {
+      
+  }
